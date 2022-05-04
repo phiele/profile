@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* border: 1px solid red; */
+  color: white;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* html, body {
+  height: 100%;
+} */
+
+body {
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+  margin: 0.5rem 0rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 5px;
+  margin: 9px;
+  padding: 15px 15px 30px;
+  width: 50vw;
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card {
+    margin: 5px;
+    width: 86vw;
+  }
+}
+
+.profile {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem 0rem;
+  /* border: 1px dashed white; */
+}
+
+i {
+  color: white;
+  padding: 0px 5px;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+  /* transition: all 0.05s ease-in-out 0.05s; */
+}
+
+a:hover {
+  color: rgb(255, 136, 0);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-size {
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.btn-white {
+  font-size: 0.9rem;
+  /* background-color: white;
+  color: black; */
+  background-color: orange;
+  color: white;
+  transition: transform .2s;
+}
+
+.btn-white:hover {
+  /* background-color: white; */
+  background-color: rgb(255, 136, 0);
+  /* color: black; */
+  /* background-color: orange; */
+  color: white;
+  transform: scale(1.03);
+  /* transition: all 0.05s ease-in-out 0.05s; */
+}
+
+.skills > p {
+  font-size: 3rem;
+}
+
+.footer > p {
+  font-size: 1.5rem;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.3); /* (130% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  color: orange
+  /* transition: all 0.2s ease-in-out 0.2s; */
+}
