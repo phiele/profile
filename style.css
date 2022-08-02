@@ -123,6 +123,7 @@ a:hover {
 
 .ruby {
   filter: brightness(0) invert(1);
+  height: 2.6rem;
 }
 
 .ruby:hover {
